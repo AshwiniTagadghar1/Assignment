@@ -1,0 +1,25 @@
+{
+  "name": "oneshotai",
+  "version": "1.0.0",
+  "description": "College-Student",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "author": "Ashwini S Tagadghar",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/material": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "engines": {
+    "node": "16.10.0"
+  }
+}
