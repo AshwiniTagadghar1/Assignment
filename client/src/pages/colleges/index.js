@@ -6,7 +6,6 @@ import TableBody from '@mui/material/TableBody';
 import IconButton from '@mui/material/IconButton';
 import FirstPageIcon from '@mui/icons-material/FirstPage';
 import StyledModal from '../../Modal';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import LastPageIcon from '@mui/icons-material/LastPage';

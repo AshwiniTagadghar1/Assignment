@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Box from '@mui/material/Box';
 import Colleges from './pages/colleges';
 import Students from './pages/students';
+import Dashboard from './pages/dashboard';
 
 export default function CustomizedTables() {
   return (
@@ -21,6 +22,9 @@ export default function CustomizedTables() {
      <Router>
      <AppBar position="static" style={{backgroundColor:'black'}}>
         <Toolbar>
+        <Link to="/"><Typography variant="h6" component="div"  sx={{ marginLeft: '10px' }} style={{color:"white"}}>
+            Dashboard
+          </Typography></Link>
          <Link to="/colleges"><Typography variant="h6" component="div"  sx={{ marginLeft: '10px' }} style={{color:"white"}}>
             Colleges
           </Typography></Link>
@@ -32,11 +36,13 @@ export default function CustomizedTables() {
       </AppBar>
         <Switch>
         <Route exact path="/">
-          <p>Welcome</p>
+          <Dashboard />
           </Route>
+
           <Route exact path="/colleges">
           <Colleges />
           </Route>
+
           <Route exact path="/students">
           <Students />
           </Route>
