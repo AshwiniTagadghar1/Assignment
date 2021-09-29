@@ -1,8 +1,11 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
+var cors = require('cors')
+var app = express()
+ 
+app.use(cors())
 
-const app = express();
 require('dotenv').config();
 const path = require('path') //other imports
 
