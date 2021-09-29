@@ -2,10 +2,11 @@ const express = require('express');
 const router = express.Router();
 const College = require('../models/colleges')
 const Student = require('../models/students')
+require('dotenv').config();
 
 
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb+srv://ashwini:ashwini@cluster0.tpflx.mongodb.net/mydb?retryWrites=true&w=majority";
+var url = process.env.MONGODB_URI;
 
 
 router.get('/college',function(req,res,next){

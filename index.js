@@ -9,9 +9,9 @@ app.use(cors())
 require('dotenv').config();
 const path = require('path') //other imports
 
-//mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 
-mongoose.connect('mongodb+srv://ashwini:ashwini@cluster0.tpflx.mongodb.net/mydb?retryWrites=true&w=majority'); //mongodb://localhost/mydb
+//mongoose.connect('mongodb+srv://ashwini:ashwini@cluster0.tpflx.mongodb.net/mydb?retryWrites=true&w=majority'); //mongodb://localhost/mydb
 mongoose.Promise = global.Promise;
 
 
