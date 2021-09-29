@@ -3,12 +3,12 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const app = express();
-require("dotenv").config();
-const path = require("path") //other imports
+require('dotenv').config();
+const path = require('path') //other imports
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+//mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 
-//mongoose.connect('mongodb+srv://ashwini:ashwini@cluster0.tpflx.mongodb.net/mydb?retryWrites=true&w=majority'); //mongodb://localhost/mydb
+mongoose.connect('mongodb+srv://ashwini:ashwini@cluster0.tpflx.mongodb.net/mydb?retryWrites=true&w=majority'); //mongodb://localhost/mydb
 mongoose.Promise = global.Promise;
 
 
@@ -36,7 +36,7 @@ app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
 
-app.listen(process.env.PORT || 8049, function(){ //port
+app.listen(process.env.PORT || 8088, function(){ //port
     console.log('now listening for requests');
 
 });

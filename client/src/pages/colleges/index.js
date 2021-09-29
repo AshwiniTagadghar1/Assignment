@@ -99,7 +99,7 @@ const Colleges = ()=> {
     const [origdata,setorigData]=React.useState([])
   const [data,setData]=React.useState([])
   React.useEffect(()=> {
-    axios.get('http://localhost:8049/api/college').then(x=> {
+    axios.get('http://localhost:8088/api/college').then(x=> {
       setorigData(x.data);
       setData(x.data)})
   },[])

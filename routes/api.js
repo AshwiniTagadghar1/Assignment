@@ -5,7 +5,7 @@ const Student = require('../models/students')
 
 
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
+var url = "mongodb+srv://ashwini:ashwini@cluster0.tpflx.mongodb.net/mydb?retryWrites=true&w=majority";
 
 
 router.get('/college',function(req,res,next){
