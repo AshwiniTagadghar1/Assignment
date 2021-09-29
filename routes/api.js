@@ -6,7 +6,7 @@ require('dotenv').config();
 
 
 var MongoClient = require('mongodb').MongoClient;
-var url = process.env.MONGODB_URI;
+var url = process.env.REACT_APP_MONGODB_URI;
 
 
 router.get('/college',function(req,res,next){
