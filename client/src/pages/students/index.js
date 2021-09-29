@@ -159,7 +159,7 @@ const handleClear = ()=>   {
           <TableRow>
            
             <StyledTableCell align="right">Name</StyledTableCell>
-            <StyledTableCell align="right">college_id</StyledTableCell>
+            <StyledTableCell align="right">college_name</StyledTableCell>
             <StyledTableCell align="right">batch_year</StyledTableCell>
             
             <StyledTableCell align="right">Details</StyledTableCell>
@@ -173,8 +173,8 @@ const handleClear = ()=>   {
              
             
    
-              <StyledTableCell align="right">{row.name}</StyledTableCell>
-              <StyledTableCell align="right">{row.college_id}</StyledTableCell>
+              <StyledTableCell align="right">{row.name}</StyledTableCell> 
+              <StyledTableCell align="right">{row.nameOfcollege[0].name}</StyledTableCell> 
               <StyledTableCell align="right">{row.batch_year}</StyledTableCell>
              
               <StyledTableCell align="right"> <Button variant="contained"  onClick={()=> {

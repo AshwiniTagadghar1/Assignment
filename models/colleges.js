@@ -6,11 +6,11 @@ const CollegeSchema = new Schema({
     name: {
         type: String,
     },
-    roll: {
+    id: {
         type: String,
-        required: [true, 'Roll field is required']
+        
     },
-    present: {
+    Year_of_foundation: {
         type: Boolean,
         deafult: true
     }
